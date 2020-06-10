@@ -4,7 +4,7 @@ import time
 import datetime
 import paho.mqtt.client as mqtt
 
-key = '75de5122bd612375391c281fe3ce75cc'
+key = 'xxxxxxxxx'
 
 broker_url = '192.168.2.67'
 broker_port = 1883
@@ -13,7 +13,7 @@ rainmaker = mqtt.Client()
 rainmaker.connect(broker_url, broker_port)
 
 while True:
-    parkdale = forecast(key, 43.638316, -79.440705)
+    parkdale = forecast(key, xxxxx, xxxxx)
     pdt = (parkdale.temperature -32)*5/9
     pdo = parkdale.ozone
     print('PARKDALE WEATHER')
