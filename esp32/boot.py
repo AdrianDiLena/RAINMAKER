@@ -14,9 +14,6 @@ gc.collect()
 # Relevant Personal Keys
 ssid = 'VIRGIN930'
 password = '6AF7AD59'
-client_id = '75634145312158574'
-mqtt_server = '192.168.2.67'
-topic_sub = b'RAINMAKER'
 
 # Set up wifi station
 station = network.WLAN(network.STA_IF)
@@ -27,12 +24,10 @@ while station.isconnected() == False:
   pass
 
 print(station.ifconfig())
-webrepl.start()
 
-settime()
-
-print('\nWelcome to RAINMAKER')
+print('\n\nWelcome to RAINMAKER')
 print('\nAdrian DiLena')
 print('First Run: --')
-print('This Version: 5.27.2020')
-print('\nAutomated/Networked Sprinkler System')
+print('This Version: 6.9.2020')
+print('\nAutomated/Networked Irrigation System')
+
